@@ -128,6 +128,12 @@ export const searchGroups = getSearchGroups();
 
 export type SearchGroup = (typeof searchGroups)[number];
 
+export function getBaseUrl() {
+  if (typeof window !== 'undefined') return '';
+  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
+  return `http://localhost:${process.env.PORT ?? 3001}`;
+}
+
 export function invalidateChatsCache() {
   if (typeof window !== 'undefined') {
     const event = new CustomEvent('invalidate-chats-cache');

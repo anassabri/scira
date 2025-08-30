@@ -19,8 +19,12 @@ export const serverEnv = createEnv({
     TWITTER_CLIENT_ID: z.string().min(1),
     TWITTER_CLIENT_SECRET: z.string().min(1),
     REDIS_URL: z.string().min(1),
-    UPSTASH_REDIS_REST_URL: z.string().min(1),
-    UPSTASH_REDIS_REST_TOKEN: z.string().min(1),
+    UPSTASH_REDIS_REST_URL: z.string().optional(),
+    UPSTASH_REDIS_REST_TOKEN: z.string().optional(),
+    DODO_PAYMENTS_API_KEY: z.string().optional(),
+    
+    // Optional, but recommended
+    POSTGRES_URL_NON_POOLING: z.string().optional(),
     ELEVENLABS_API_KEY: z.string().min(1),
     TAVILY_API_KEY: z.string().min(1),
     EXA_API_KEY: z.string().min(1),

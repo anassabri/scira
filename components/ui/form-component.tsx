@@ -659,12 +659,10 @@ const ModelSwitcher: React.FC<ModelSwitcherProps> = React.memo(
                       )}
                     </div>
                   </DialogTitle>
-                  <DialogDescription className="text-white/90">
-                    <p className="text-sm text-white/80 text-left">
-                      {selectedAuthModel?.label
-                        ? `${selectedAuthModel.label} requires an account to access`
-                        : 'Create an account to access this AI model and unlock additional features'}
-                    </p>
+                  <DialogDescription className="text-sm text-white/80 text-left">
+                    {selectedAuthModel?.label
+                      ? `${selectedAuthModel.label} requires an account to access`
+                      : 'Create an account to access this AI model and unlock additional features'}
                   </DialogDescription>
                   <Button
                     onClick={() => {
@@ -2815,10 +2813,10 @@ const FormComponent: React.FC<FormComponentProps> = ({
                       )}
                       <span className="text-sm text-white/80">/month</span>
                     </div>
-                    <p className="text-sm text-white/80 text-left">
-                      Get enhanced capabilities including prompt enhancement and unlimited features
-                    </p>
                   </DialogDescription>
+                  <p className="text-sm text-white/80 text-left">
+                    Get enhanced capabilities including prompt enhancement and unlimited features
+                  </p>
                   <Button
                     onClick={() => {
                       window.location.href = '/pricing';

@@ -169,10 +169,10 @@ export const PostMessageUpgradeDialog = React.memo(({ open, onOpenChange }: Post
                     <span className="text-sm text-white/80">for a month</span>
                   </div>
                 )}
-                <p className="text-sm text-white/80 text-left">
-                  Unlock unlimited searches, advanced AI models, and premium features to supercharge your research.
-                </p>
               </DialogDescription>
+              <p className="text-sm text-white/80 text-left">
+                Unlock unlimited searches, advanced AI models, and premium features to supercharge your research.
+              </p>
               <Button
                 onClick={() => {
                   window.location.href = '/pricing';
@@ -189,7 +189,7 @@ export const PostMessageUpgradeDialog = React.memo(({ open, onOpenChange }: Post
           <div className="flex items-center gap-4">
             <CheckIcon className="size-4 text-primary flex-shrink-0" />
             <div className="space-y-1">
-              <p className="text-sm font-medium text-foreground">Scira Lookout</p>
+              <p className="text-sm font-medium text-foreground">AI Search Lookout</p>
               <p className="text-xs text-muted-foreground">Automated search monitoring on your schedule</p>
             </div>
           </div>

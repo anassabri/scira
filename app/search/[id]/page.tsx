@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   // if chat is private, return title
   if (chat.visibility === 'private') {
     if (!user) {
-      title = 'Scira Chat';
+      title = 'AI Search Chat';
     }
     if (user!.id !== chat.userId) {
       title = 'Scira Chat';

@@ -17,7 +17,7 @@ import { HugeiconsIcon } from '@hugeicons/react';
 import { RepeatIcon, Copy01Icon, CpuIcon } from '@hugeicons/core-free-icons';
 import { ChatMessage, CustomUIDataTypes, DataQueryCompletionPart, DataExtremeSearchPart } from '@/lib/types';
 import { UseChatHelpers } from '@ai-sdk/react';
-import { SciraLogoHeader } from '@/components/scira-logo-header';
+import { AISearchLogoHeader } from '@/components/ai-search-logo-header';
 import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 
@@ -310,7 +310,7 @@ export const MessagePartRenderer = memo<MessagePartRendererProps>(
             key={`${messageIndex}-${partIndex}-loading`}
             className="flex flex-col min-h-[calc(100vh-18rem)] !m-0 !p-0"
           >
-            <SciraLogoHeader />
+            <AISearchLogoHeader />
             <div className="flex space-x-2 ml-8 mt-2">
               <div
                 className="w-2 h-2 rounded-full bg-muted-foreground dark:bg-muted-foreground animate-bounce"
@@ -602,7 +602,7 @@ export const MessagePartRenderer = memo<MessagePartRendererProps>(
       if (partIndex === firstStepStartIndex) {
         return (
           <div key={`${messageIndex}-${partIndex}-step-start-logo`} className="!m-0 !p-0">
-            <SciraLogoHeader />
+            <AISearchLogoHeader />
           </div>
         );
       }

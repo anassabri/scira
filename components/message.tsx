@@ -40,7 +40,7 @@ import {
 } from '@hugeicons/core-free-icons';
 import { Attachment, ChatMessage, ChatTools, CustomUIDataTypes } from '@/lib/types';
 import { UseChatHelpers } from '@ai-sdk/react';
-import { SciraLogoHeader } from '@/components/scira-logo-header';
+import { AISearchLogoHeader } from '@/components/ai-search-logo-header';
 import { ComprehensiveUserData } from '@/lib/user-data-server';
 import { cn } from '@/lib/utils';
 
@@ -935,7 +935,7 @@ export const Message: React.FC<MessageProps> = ({
         {isMissingAssistantResponse && (
           <div className="flex items-start">
             <div className="w-full">
-              <SciraLogoHeader />
+              <AISearchLogoHeader />
 
               <div className="flex flex-col gap-4 bg-primary/10 border border-primary/20 dark:border-primary/20 rounded-lg p-4">
                 <div className=" mb-4 max-w-2xl">

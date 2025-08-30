@@ -41,7 +41,7 @@ import {
 } from '@/components/ui/navigation-menu';
 
 import { ThemeSwitcher } from '@/components/theme-switcher';
-import { SciraLogo } from '@/components/logos/scira-logo';
+import { AISearchLogo } from '@/components/logos/ai-search-logo';
 
 export default function AboutPage() {
   const router = useRouter();
@@ -180,7 +180,7 @@ export default function AboutPage() {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group">
               <div className="relative">
-                <SciraLogo className="size-8 transition-transform group-hover:scale-110" />
+                <AISearchLogo className="size-8 transition-transform group-hover:scale-110" />
               </div>
               <span className="text-xl font-bold tracking-tight">Scira</span>
             </Link>
@@ -249,19 +249,13 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="py-24 px-4">
         <div className="container max-w-4xl mx-auto text-center space-y-12">
-          <div className="space-y-6">
-            <div className="flex items-center justify-center gap-3 mb-8">
-              <SciraLogo className="size-12" />
-              <h1 className="text-4xl font-bold">Scira</h1>
-            </div>
-
-            <h2 className="text-2xl md:text-3xl font-semibold text-foreground max-w-3xl mx-auto">
-              Open Source AI-Powered Search Engine
-            </h2>
-
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              A clean, minimalistic search engine with RAG and search grounding capabilities. Get accurate, up-to-date
-              answers from reliable sources.
+          <div className="flex flex-col items-center justify-center space-y-4">
+            <AISearchLogo className="size-12" />
+            <h1 className="text-4xl font-bold">AI Search</h1>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              AI Search is an open-source, AI-powered search engine that combines RAG technology with search
+              grounding to provide accurate and reliable information. We are committed to privacy and transparency,
+              and we do not track your activity or store your data.
             </p>
           </div>
 
@@ -725,10 +719,11 @@ export default function AboutPage() {
 
           <ProAccordion type="single" collapsible className="w-full">
             <ProAccordionItem value="item-1">
-              <ProAccordionTrigger>What is Scira?</ProAccordionTrigger>
+              <ProAccordionTrigger>What is AI Search?</ProAccordionTrigger>
               <ProAccordionContent>
-                Scira is an open-source AI-powered search engine that uses RAG (Retrieval-Augmented Generation) and
-                search grounding to provide accurate, up-to-date answers from reliable sources.
+                AI Search is an open-source AI-powered search engine that uses RAG (Retrieval-Augmented Generation) and
+                search grounding to provide accurate and reliable information. We are committed to privacy and
+                transparency, and we do not track your activity or store your data.
               </ProAccordionContent>
             </ProAccordionItem>
 
@@ -758,18 +753,20 @@ export default function AboutPage() {
             </ProAccordionItem>
 
             <ProAccordionItem value="item-5">
-              <ProAccordionTrigger>What AI models does Scira use?</ProAccordionTrigger>
+              <ProAccordionTrigger>What AI models does AI Search use?</ProAccordionTrigger>
               <ProAccordionContent>
-                Scira uses a range of advanced AI models including Grok, Claude, OpenAI GPT, Gemini, and more to provide
-                the best possible answers for different types of queries.
+                AI Search uses a range of advanced AI models including Grok, Claude, OpenAI GPT, Gemini, and more to provide
+                the best possible search experience. We are constantly evaluating new models to ensure we are using the
+                most capable and efficient technology available.
               </ProAccordionContent>
             </ProAccordionItem>
 
             <ProAccordionItem value="item-6">
-              <ProAccordionTrigger>How does Scira ensure information accuracy?</ProAccordionTrigger>
+              <ProAccordionTrigger>How does AI Search ensure information accuracy?</ProAccordionTrigger>
               <ProAccordionContent>
-                Scira combines RAG technology with search grounding to retrieve information from reliable sources and
-                verify it before providing answers. Each response includes source attribution for transparency.
+                AI Search combines RAG technology with search grounding to retrieve information from reliable sources and
+                verify its accuracy. We also provide source links for all information so you can verify the information
+                for yourself.
               </ProAccordionContent>
             </ProAccordionItem>
           </ProAccordion>
@@ -789,8 +786,8 @@ export default function AboutPage() {
         <div className="container max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-3">
-              <SciraLogo className="size-8" />
-              <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Scira. All rights reserved.</p>
+              <AISearchLogo className="size-8" />
+              <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} AI Search. All rights reserved.</p>
             </div>
 
             <div className="flex items-center gap-6">
